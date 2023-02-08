@@ -1,24 +1,24 @@
 import './App.css';
-// import Card from './Card';
-// import Calculations from './Calculations';
+import Card from './Card';
+import Calculations from './Calculations';
 import './index.css';
 // import App from './App';
-import Emoji from './Emoji';
-// import CurrTimeDate from './Practice';
+// import Emoji from './Emoji';
+import CurrTimeDate from './Practice';
 // import obj from "./object";
 
 
 function App() {
-  // function allCards(ele){
-  //   return (
-  //     <Card key={ele.id} imgSrc={ele.imgSrc} title={ele.title} link={ele.link} />
-  //   );
-  // }
+  const allCards = (ele)=>{
+    return (
+      <Card key={ele.id} imgSrc={ele.imgSrc} title={ele.title} link={ele.link} />
+    );
+  }
   
   return (
     <>
-      <Emoji />
-      {/* <CurrTimeDate /> */}
+      {/* <Emoji /> */}
+      <CurrTimeDate />
       {/* <Calculations/> */}
 
       {/* we dont have to use that com again and again we can use map */}
